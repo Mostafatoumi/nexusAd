@@ -93,7 +93,7 @@ def parse_arguments():
     parser.add_argument("-u", "--username", required=True, help="Username")
     parser.add_argument("-p", "--password", required=True, help="Password")
     parser.add_argument("-dc", "--domain-controller", required=True, help="Domain Controller IP")
-    parser.add_argument("-sf", "--search-filter", required=True, help="Specify the LDAP search filter. For example, '(&(objectClass=user)(sAMAccountName=jdoe))'.")
+    parser.add_argument("-sf", "--search-filter", help="Specify the LDAP search filter. For example, '(&(objectClass=user)(sAMAccountName=jdoe))'.")
     parser.add_argument("-add-user", help="Add a new user")
     parser.add_argument("-add-group", help="Add a new group")
     parser.add_argument("-add-ou", help="Add a new Organizational Unit (OU)")
