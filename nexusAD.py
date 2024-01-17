@@ -37,7 +37,7 @@ def search_filter(conn, container, filter):
 
 def add_user(conn, container, user, password):
     user_dn = f"cn={user},cn=users,{container}"
-    conn.add(f"'{user_dn}'", ['user', 'inetOrgPerson', 'top'], {'sn': f'{user}'})
+    conn.add(f'{user_dn}', ['user', 'inetOrgPerson', 'top'], {'sn': f'{user}'})
     if conn.result["result"] == 0:
         print(f"[+] User {user} added successfully.\n")
         print(f"User Path : {user_dn}")
