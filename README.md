@@ -87,6 +87,8 @@ Ou Path : ou=fun_ou,dc=emsec,dc=htb
 
 
 *  dump all users :
+You use this [LDAP Search Filter Cheatsheet
+](https://jonlabelle.com/snippets/view/markdown/ldap-search-filter-cheatsheet)
 
 ```bash
 ┌──(root㉿emsec)-[/opt/nexusAd]
